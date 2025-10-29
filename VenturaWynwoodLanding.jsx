@@ -86,7 +86,7 @@ export default function VenturaWynwoodLanding(){
 
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-20 md:grid-cols-2 md:py-28">
           <div>
-          <div className="flex items-left justify-start sm:justify-center py-1">
+          <div className="flex items-center justify-left sm:justify-left py-1">
             <img
                 src="/logo.png"
                 alt={BRAND.name}
