@@ -25,8 +25,9 @@ export default function GalleryTwo() {
             href="https://www.instagram.com/venturawynwood/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative aspect-square overflow-hidden rounded-lg shadow-sm hover:scale-[1.02] transition-transform duration-300"
+            className="group relative aspect-square overflow-hidden rounded-lg shadow-sm hover:scale-[1.02] transition-transform duration-300"
           >
+            {/* Imagen base */}
             <Image
               src={src}
               alt={`Ventura Wynwood gallery ${i + 1}`}
@@ -34,6 +35,17 @@ export default function GalleryTwo() {
               className="object-cover"
               sizes="(max-width: 768px) 50vw, 25vw"
             />
+
+            {/* Overlay con logo Instagram */}
+            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <Image
+                src="/icons/instagram-light.png"
+                alt="Instagram Ventura Wynwood"
+                width={60}
+                height={60}
+                className="opacity-90"
+              />
+            </div>
           </a>
         ))}
       </div>
