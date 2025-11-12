@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 
 export default function Header() {
@@ -15,7 +16,13 @@ export default function Header() {
           <button aria-label="Menú">
             <Image src="/icons/menu.svg" alt="Menú" width={40} height={40} />
           </button>
-          <button aria-label="Ubicación">
+          <button
+            aria-label="Ubicación"
+            onClick={() => {
+              const section = document.getElementById('contacto');
+              section?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             <Image src="/icons/pin.svg" alt="Ubicación" width={40} height={40} />
           </button>
           <button aria-label="Contacto">

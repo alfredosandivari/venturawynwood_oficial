@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#2F3B35] text-white">
       <div className="container-inner py-10 grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
-        {/* Izquierda: logo circular */}
+        {/* Logo */}
         <div className="flex justify-center md:justify-start">
           <Image
-            src="/images/circle-logo.png" // logo circular claro
+            src="/images/circle-logo.png"
             alt="Ventura Wynwood"
             width={140}
             height={140}
@@ -15,7 +15,7 @@ export default function Footer() {
           />
         </div>
 
-        {/* Centro: redes */}
+        {/* Redes */}
         <div className="flex items-center justify-center gap-10">
           <a
             href="https://instagram.com/ventura"
@@ -37,11 +37,11 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Derecha: datos */}
+        {/* Datos */}
         <address className="not-italic text-center md:text-right text-lg leading-7 opacity-95">
           33 NW 28th St, Miami, FL 33127<br />
           <a href="mailto:hello@venturawynwood.com" className="hover:underline">
-            Hello@venturawynwood.com
+            hello@venturawynwood.com
           </a>
           <br />
           <a href="tel:+17863006051" className="hover:underline">

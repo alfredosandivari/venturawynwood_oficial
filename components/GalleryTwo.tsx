@@ -20,8 +20,11 @@ export default function GalleryTwo() {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
         {images.map((src, i) => (
-          <div
+          <a
             key={i}
+            href="https://www.instagram.com/venturawynwood/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative aspect-square overflow-hidden rounded-lg shadow-sm hover:scale-[1.02] transition-transform duration-300"
           >
             <Image
@@ -31,7 +34,7 @@ export default function GalleryTwo() {
               className="object-cover"
               sizes="(max-width: 768px) 50vw, 25vw"
             />
-          </div>
+          </a>
         ))}
       </div>
     </section>
