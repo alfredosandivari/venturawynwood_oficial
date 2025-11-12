@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .txt { font: 28px 'Helvetica, Arial'; letter-spacing: 4px; }
+    </style>
+    <path id="circlePath" d="M300,300 m-200,0 a 200,200 0 1,1 400,0 a 200,200 0 1,1 -400,0"/>
+  </defs>
+  <circle cx="300" cy="300" r="210" fill="none" stroke="white" stroke-width="2"/>
+  <text class="txt" fill="white">
+    <textPath href="#circlePath">VENTURA WYNWOOD • LATIN URBAN EATERY •</textPath>
+  </text>
+  <g stroke="white" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M260 360 L300 240 L340 360"/>
+    <path d="M350 240 L390 360"/>
+  </g>
+</svg>

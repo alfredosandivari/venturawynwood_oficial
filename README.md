@@ -1,16 +1,16 @@
-# Ventura Wynwood — Landing
+# Ventura Wynwood (Base Design Scaffold)
 
-## Requisitos
-- Node 18+
-- npm
+Estructura inicial 1:1 con el diseño base (logo + tagline + héroe con overlay circular, bloque de texto y galería de 3 imágenes).
+- Next 15 + Tailwind
+- Alias "@/"
+- Assets en `public/`
 
-## Setup
-```bash
+## Comandos
 npm install
 npm run dev
-```
-Ir a http://localhost:3000
 
-## Notas
-- El componente principal es **VenturaWynwoodLanding.jsx** y está marcado con `"use client"`.
-- Si quieres usar TypeScript, renombra a `.tsx` y agrega `tsconfig`. En JS NO uses generics como `useState<string|null>`.
+## Dónde editar
+- `components/Header.tsx` — Logo, tagline e íconos.
+- `components/Hero.tsx` — Imagen/video de héroe y overlay circular (usa `/images/circle_logo.svg`).
+- `components/Intro.tsx` — Copys centrales.
+- `components/Gallery.tsx` — 3-up grid.

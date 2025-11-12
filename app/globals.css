@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  @apply bg-white text-text antialiased;
+}
+
+.container-inner { @apply max-w-6xl mx-auto px-4; }
+.tagline { @apply text-[13px] leading-tight text-text; }
+.hero-circle {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
