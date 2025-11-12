@@ -16,7 +16,7 @@ export default function Contact() {
       {/* fondo con blur */}
       <div className="relative h-[420px] w-full overflow-hidden">
         <Image
-          src="/images/contact-bg.jpg"
+          src="/images/contact-bg.png"
           alt="Background contact"
           fill
           className="object-cover blur-sm scale-105"

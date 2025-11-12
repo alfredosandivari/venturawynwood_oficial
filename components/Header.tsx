@@ -3,14 +3,6 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="w-full">
-      <div className="border-b border-black/10">
-        <div className="container-inner py-2 text-center md:text-center font-bold">
-          <p className="tagline">
-            Una experiencia donde el fuego, el arte y el sabor se encuentran.
-            Donde cada pan cuenta una historia, y cada plato tiene alma.
-          </p>
-        </div>
-      </div>
 
       <div className="container-inner py-4 flex items-center justify-between">
         {/* Logo VA */}
@@ -30,6 +22,14 @@ export default function Header() {
             <Image src="/icons/chat.svg" alt="Contacto" width={40} height={40} />
           </button>
         </nav>
+      </div>
+      <div className="border-b border-black/10">
+        <div className="container-inner py-2 text-center md:text-center font-bold">
+          <p className="tagline">
+            Una experiencia donde el fuego, el arte y el sabor se encuentran.
+            Donde cada pan cuenta una historia, y cada plato tiene alma.
+          </p>
+        </div>
       </div>
     </header>
   );

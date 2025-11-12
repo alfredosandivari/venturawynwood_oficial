@@ -50,7 +50,7 @@ export default function Hero() {
           disablePictureInPicture
           controlsList="nodownload noplaybackrate nofullscreen"
         >
-          <source src="/videos/hero-min.mp4" type="video/mp4" />
+          <source src="/videos/hero.mp4" type="video/mp4" />
           {/* si algún día generas webm:
           <source src="/videos/hero.webm" type="video/webm" /> */}
         </video>
