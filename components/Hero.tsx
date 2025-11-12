@@ -3,14 +3,18 @@ export default function Hero() {
     <section className="relative w-full overflow-hidden bg-black">
       {/* Contenedor del video */}
       <div className="relative w-full h-[150px] md:h-[600px] overflow-hidden">
-        <video
-          className="w-full h-full object-cover object-center"
-          src="/videos/hero.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+      <video
+        className="w-full h-full object-cover object-center"
+        src="/videos/hero.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+        poster="/images/hero-poster.jpg"   // opcional (un frame del video)
+        disablePictureInPicture
+      />
+
       </div>
 
       {/* Overlay circular (si lo mantienes) 
