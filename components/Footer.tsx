@@ -18,7 +18,7 @@ export default function Footer() {
         {/* Redes */}
         <div className="flex items-center justify-center gap-10">
           <a
-            href="https://instagram.com/ventura"
+            href="https://www.instagram.com/venturawynwood/"
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"
@@ -27,7 +27,7 @@ export default function Footer() {
             <Image src="/icons/instagram-light.png" alt="" width={56} height={56} />
           </a>
           <a
-            href="https://facebook.com/ventura"
+            href="https://facebook.com/venturawynwood"
             target="_blank"
             rel="noreferrer"
             aria-label="Facebook"
