@@ -15,7 +15,7 @@ export default function GalleryTwo() {
   return (
     <section className="container-inner py-20">
       <h2 className="text-center text-3xl md:text-4xl font-semibold text-neutral-800 mb-10">
-        Inspiración y sabores que nos definen
+        Inspiration and flavors that define us.
       </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
