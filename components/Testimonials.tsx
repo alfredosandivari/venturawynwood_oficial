@@ -7,20 +7,20 @@ type Testimonial = {
   const data: Testimonial[] = [
     {
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim pretium consectetur. Curabitur tempor posuere massa in varius. Pellentesque viverra.",
-      name: "Mr. Your Name",
+        "A fresh and different concept. Wynwood needed a place like this: modern, thoughtful, and with flavors that truly surprise you.",
+      name: "Laura Martínez",
       rating: 5,
     },
     {
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim pretium consectetur. Curabitur tempor posuere massa in varius. Pellentesque viverra.",
-      name: "Mr. Your Name",
+        "The combination of atmosphere and gastronomy is perfect. It feels like a space designed with intention in every detail.",
+      name: "Daniel Herrera",
       rating: 5,
     },
     {
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim pretium consectetur. Curabitur tempor posuere massa in varius. Pellentesque viverra.",
-      name: "Mr. Your Name",
+        "Probé el preview del menú y quedé impresionada. Platos creativos, delicados y con mucho carácter. Definitivamente volveré.",
+      name: "Sofía Benítez",
       rating: 5,
     },
   ];
@@ -51,15 +51,12 @@ type Testimonial = {
         {/* Título multilinea */}
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[28px] md:text-[34px] leading-tight text-neutral-800">
-            Algo está naciendo en Wynwood…
+
+            Wynwood is about to welcome something new…
             <br />
-            <span className="block">una experiencia que combina fuego, arte y sabor.</span>
-            <span className="block">
-              Sé parte de los primeros en descubrir Ventura Wynwood
-            </span>
-            <span className="block">
-              donde el pan se hornea con alma y cada plato cuenta una historia.
-            </span>
+            <span className="block">a culinary experience that inspires and connects.</span>
+            <span className="block">Be among the first to discover Ventura Wynwood,</span>
+            <span className="block">a place where food becomes memory and every dish speaks for itself.</span>
           </p>
   
           {/* Fila de estrellas grande */}

@@ -3,24 +3,23 @@ export default function Intro() {
     <section className="container-inner py-16 text-center space-y-8">
       <div>
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
-          Muy pronto abre <span className="text-black font-bold">Ventura Wynwood</span>
+          <span className="text-black font-bold">Ventura Wynwood</span> is opening very soon
         </h2>
         <p className="mt-3 text-lg text-gray-700">
-          Un espacio creado para quienes buscan algo más que comer:
+        A place designed for those who appreciate gastronomy, design, and experiences that go beyond the plate.
         </p>
       </div>
 
       <div>
         <p className="text-xl italic text-gray-800">
-          “Una energía que se siente, se comparte y se vive.”
+        “An experience you feel, share, and connect with.”
         </p>
       </div>
 
       <div className="max-w-2xl mx-auto">
         <p className="text-gray-700 text-lg leading-relaxed">
           Sé parte de los primeros en descubrirlo.  
-          Únete a nuestra <span className="font-semibold text-black">lista VIP</span> y obtén acceso anticipado, degustaciones privadas  
-          y la invitación oficial a nuestra <span className="font-semibold">noche inaugural</span>.
+          Join our  <span className="font-semibold text-black">VIP list</span> to receive early access, special previews, and an invitation to <span className="font-semibold">our grand opening.</span>
         </p>
       </div>
 
@@ -29,7 +28,7 @@ export default function Intro() {
           href="#vip"
           className="inline-block rounded-full bg-black text-white px-8 py-3 text-sm uppercase tracking-wide hover:bg-gray-800 transition"
         >
-          Unirme a la lista VIP
+          Join to our VIP list
         </a>
       </div>
     </section>

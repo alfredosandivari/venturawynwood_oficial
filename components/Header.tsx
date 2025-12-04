@@ -33,7 +33,7 @@ export default function Header() {
       <div className="border-b border-black/10">
         <div className="container-inner py-2 text-center md:text-center font-bold">
           <p className="tagline">
-          Un espacio donde el arte y la gastronomía se encuentran para crear algo más que una comida, una experiencia que vibra, se siente y se comparte
+          A space where art and gastronomy come together to create more than just food: an experience to enjoy, share, and remember.
           </p>
         </div>
       </div>
