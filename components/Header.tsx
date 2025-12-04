@@ -29,6 +29,18 @@ export default function Header() {
             <Image src="/icons/chat.svg" alt="Contacto" width={40} height={40} />
           </button>
         </nav>
+        <a
+        href="https://toasttakeout.com"  // <-- AQUÍ PONES TU LINK REAL
+        target="_blank"
+        rel="noreferrer"
+        className="mt-4 inline-flex"
+      >
+        <img
+          src="/images/toast.png"       // <-- AQUÍ VA TU PNG
+          alt="Order on Toast"
+          className="h-10 w-auto sm:h-11 md:h-12 hover:opacity-90 transition"
+        />
+      </a>
       </div>
       <div className="border-b border-black/10">
         <div className="container-inner py-2 text-center md:text-center font-bold">
