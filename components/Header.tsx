@@ -31,17 +31,20 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-6">
           {/* Icons: menu, pin, chat */}
           <nav className="flex items-center gap-5">
-            <button
-              aria-label="Menú"
-              onClick={() => scrollToSection("menu")}
-            >
-              <Image
-                src="/icons/chat.svg"
-                alt="Menú"
-                width={40}
-                height={40}
-              />
-            </button>
+            <a
+            href="/menu.pdf"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Ver menú en PDF"
+          >
+            <Image
+              src="/icons/menu-pdf.png"   // 👈 cambia este nombre si usas otro archivo
+              alt="Menú PDF"
+              width={40}
+              height={40}
+            />
+          </a>
+
 
             <button
               aria-label="Ubicación"
