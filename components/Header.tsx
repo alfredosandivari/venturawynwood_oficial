@@ -135,12 +135,15 @@ export default function Header() {
               <span className="text-base">↗</span>
             </a>
 
-            <button
-              onClick={() => scrollToSection("menu")}
+            <a
+              href="/menu.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="text-left rounded-xl px-3 py-2 hover:bg-black/[0.03]"
+              onClick={() => setIsMenuOpen(false)}
             >
               Menú
-            </button>
+</a>
 
             <button
               onClick={() => scrollToSection("contacto")}
