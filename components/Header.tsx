@@ -2,14 +2,23 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { lang, toggleLang } = useLanguage();
 
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     section?.scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false);
+  };
+
+  const labels = {
+    menu: lang === "es" ? "Menú" : "Menu",
+    contact: lang === "es" ? "Contacto" : "Contact",
+    orderHere: lang === "es" ? "Ordenar Aquí" : "Order Here",
+    bajada: lang === "es" ? "Un espacio donde el arte y la gastronomía se unen para crear más que comida: una experiencia para disfrutar, compartir y recordar." : "A space where art and gastronomy come together to create more than just food: an experience to enjoy, share, and remember."
   };
 
   return (
@@ -73,9 +82,17 @@ export default function Header() {
               border: "1px solid rgba(244, 235, 220, 0.3)",
             }}
           >
-            Order Here
+            {labels.orderHere}
             <span className="text-base">↗</span>
           </a>
+
+          <button
+            onClick={toggleLang}
+            className="text-xs font-semibold px-3 py-1 rounded-full border border-black/15 hover:bg-black/5"
+          >
+            {lang === "es" ? "EN" : "ES"}
+          </button>
+
         </div>
 
         {/* NAV MOBILE (solo botón hamburguesa + Order Here compacto si quieres) */}
@@ -108,8 +125,7 @@ export default function Header() {
       <div className="border-b border-black/10">
         <div className="container-inner py-2 text-center md:text-center font-bold">
           <p className="tagline">
-            A space where art and gastronomy come together to create more than
-            just food: an experience to enjoy, share, and remember.
+            {labels.bajada}
           </p>
         </div>
       </div>
@@ -131,7 +147,7 @@ export default function Header() {
               }}
               onClick={() => setIsMenuOpen(false)}
             >
-              Order Here
+              {labels.orderHere}
               <span className="text-base">↗</span>
             </a>
 
