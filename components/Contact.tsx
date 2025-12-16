@@ -69,9 +69,7 @@ export default function Contact() {
     src="https://maps.google.com/maps?hl=en&q=33%20NW%2028th%20St,%20Miami,%20FL%2033127&ie=UTF8&t=&z=16&iwloc=B&output=embed"
     className="
       absolute inset-0 w-full h-full block
-      grayscale contrast-110 brightness-95
     "
-    style={{ border: 0, filter: "grayscale(100%) contrast(1.1) brightness(0.95)" }}
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
     allowFullScreen
