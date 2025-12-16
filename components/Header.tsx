@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/components/LanguageProvider";
+import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,6 +55,13 @@ export default function Header() {
             />
           </a>
 
+          {/* Link a página de eventos */}
+        <Link
+          href="/events"
+          className="hidden md:inline-block text-sm font-semibold hover:opacity-70 transition"
+        >
+          Events
+        </Link>
 
             <button
               aria-label="Ubicación"
@@ -159,7 +167,15 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Menú
-</a>
+            </a>
+            
+            <Link
+              href="/events"
+              className="text-left rounded-xl px-3 py-2 hover:bg-black/[0.03]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Events
+            </Link>
 
             <button
               onClick={() => scrollToSection("contacto")}
