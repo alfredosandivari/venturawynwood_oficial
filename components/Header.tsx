@@ -22,7 +22,9 @@ export default function Header() {
   };
 
   return (
+    
     <header className="w-full sticky top-0 z-40 bg-white/90 backdrop-blur">
+
       {/* Barra superior */}
       <div className="container-inner py-4 flex items-center justify-between">
         {/* Logo */}
@@ -62,6 +64,15 @@ export default function Header() {
             >
               <Image src="/icons/pin.svg" alt="Location" width={40} height={40} />
             </button>
+            <a
+                        href="https://www.instagram.com/venturawynwood/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Instagram"
+                        className="opacity-90 hover:opacity-100 transition"
+                      >
+                        <Image src="/icons/instagram-black.png" alt="" width={40} height={40} />
+                      </a>
           </nav>
 
           {/* Switch idioma */}
@@ -186,6 +197,7 @@ export default function Header() {
             >
               {labels.contact}
             </button>
+            
           </div>
         </div>
       )}
